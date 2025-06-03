@@ -31,11 +31,23 @@ body {
   }
   
   .nav-link {
-    @apply text-gray-300 hover:text-red-600 transition-colors duration-300;
+    @apply text-gray-300 hover:text-red-600 transition-colors duration-300 relative py-1;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] absolute w-0 h-0.5 bg-red-600 left-0 bottom-0 transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
   }
   
   .nav-link-active {
-    @apply text-red-600 hover:opacity-80;
+    @apply text-red-600 hover:opacity-80 relative py-1;
+  }
+  
+  .nav-link-active::after {
+    @apply content-[''] absolute w-full h-0.5 bg-red-600 left-0 bottom-0;
   }
   
   .section-title {

@@ -68,7 +68,7 @@ const Header = () => {
 
           {/* デスクトップナビゲーション */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-8">
+            <ul className="flex space-x-12">
               <li>
                 <Link href="/" className="nav-link-active">
                   HOME
@@ -77,11 +77,6 @@ const Header = () => {
               <li>
                 <Link href="/profile" className="nav-link">
                   PROFILE
-                </Link>
-              </li>
-              <li>
-                <Link href="/works" className="nav-link">
-                  WORKS
                 </Link>
               </li>
               <li>
@@ -120,8 +115,8 @@ const Header = () => {
           animate={isOpen ? 'open' : 'closed'}
           variants={menuVariants}
         >
-          <div className="bg-black bg-opacity-95 mt-4 py-4">
-            <ul className="flex flex-col space-y-4 px-4">
+          <div className="bg-black bg-opacity-95 mt-4 py-6 border-t border-red-600">
+            <ul className="flex flex-col space-y-6 px-6">
               <li>
                 <Link
                   href="/"
@@ -138,15 +133,6 @@ const Header = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   PROFILE
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/works"
-                  className="nav-link block py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  WORKS
                 </Link>
               </li>
               <li>

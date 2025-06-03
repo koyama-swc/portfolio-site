@@ -101,8 +101,8 @@ export default function Home() {
               <Link href="/profile" className="btn-primary">
                 PROFILE
               </Link>
-              <Link href="/works" className="btn-primary">
-                WORKS
+              <Link href="/media" className="btn-primary">
+                MEDIA
               </Link>
             </div>
           </div>
@@ -187,7 +187,15 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square relative overflow-hidden rounded-lg border-2 border-red-600">
                 {/* プロフィール画像を配置 */}
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-black/50"></div>
+                <Image 
+                  src="/images/profile-image.png" 
+                  alt="コヤマのプロフィール画像" 
+                  width={400} 
+                  height={400} 
+                  className="object-cover w-full h-full"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-black/50 pointer-events-none"></div>
               </div>
             </div>
           </div>

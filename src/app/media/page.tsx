@@ -127,7 +127,7 @@ export default function Media() {
       likes: 0,
       readTime: '10分',
       tags: ['Next.js', 'React', 'ウェブ開発'],
-      url: 'https://note.com/ri_ra_ta_na',
+      url: 'https://note.com/ri_ra_ta_na/n/n3456789012',
     },
     {
       id: 'article4',
@@ -137,7 +137,7 @@ export default function Media() {
       likes: 0,
       readTime: '12分',
       tags: ['フリーランス', 'キャリア', 'プログラミング'],
-      url: 'https://note.com/ri_ra_ta_na',
+      url: 'https://note.com/ri_ra_ta_na/n/n4567890123',
     },
   ];
 
