@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --accent-color: 255, 0, 0; /* Red #FF0000 */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-3 border border-red-600 text-base font-medium rounded-none text-red-600 bg-transparent hover:bg-red-600 hover:text-white transition-colors duration-300;
+  }
+  
+  .nav-link {
+    @apply text-gray-300 hover:text-red-600 transition-colors duration-300;
+  }
+  
+  .nav-link-active {
+    @apply text-red-600 hover:opacity-80;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-white;
+  }
+  
+  .section-subtitle {
+    @apply text-xl font-semibold mb-4 text-red-600;
+  }
+  
+  .card {
+    @apply bg-gray-900 border border-gray-800 p-6 hover:border-red-600 transition-colors duration-300;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent;
+  }
+  
+  .portfolio-item {
+    @apply relative overflow-hidden group;
+  }
+  
+  .portfolio-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  .news-item {
+    @apply border-b border-gray-800 py-4 hover:bg-gray-900 transition-colors duration-300;
+  }
+  
+  .news-date {
+    @apply text-sm text-gray-400 mb-1;
+  }
+  
+  .news-title {
+    @apply text-lg font-medium text-white hover:text-red-500 transition-colors duration-300;
+  }
+  
+  .social-icon {
+    @apply text-gray-400 hover:text-red-500 transition-colors duration-300 text-2xl;
+  }
+}
+
+/* アニメーション用のクラス */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
