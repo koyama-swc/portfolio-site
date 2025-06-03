@@ -15,7 +15,7 @@ export default function Media() {
       id: 'video1',
       title: 'AIコーディングツール「Windsurf」で「ToDoリスト」を作成してみた！',
       thumbnail: '/youtube-thumbnail-1.jpg',
-      views: '1,234回視聴',
+      views: '',
       date: '2025年6月1日',
       url: 'https://www.youtube.com/@コヤマSWC/featured',
     },
@@ -23,7 +23,7 @@ export default function Media() {
       id: 'video2',
       title: 'ChatGPTとGoogle Geminiを徹底比較！どっちが優秀？',
       thumbnail: '/youtube-thumbnail-2.jpg',
-      views: '2,345回視聴',
+      views: '',
       date: '2025年5月25日',
       url: 'https://www.youtube.com/@コヤマSWC/featured',
     },
@@ -31,7 +31,7 @@ export default function Media() {
       id: 'video3',
       title: 'Next.js 14の新機能を解説！App Routerの使い方',
       thumbnail: '/youtube-thumbnail-3.jpg',
-      views: '3,456回視聴',
+      views: '',
       date: '2025年5月18日',
       url: 'https://www.youtube.com/@コヤマSWC/featured',
     },
@@ -39,7 +39,7 @@ export default function Media() {
       id: 'video4',
       title: 'フリーランスエンジニアになるには？未経験からのロードマップ',
       thumbnail: '/youtube-thumbnail-4.jpg',
-      views: '4,567回視聴',
+      views: '',
       date: '2025年5月10日',
       url: 'https://www.youtube.com/@コヤマSWC/featured',
     },
@@ -47,7 +47,7 @@ export default function Media() {
       id: 'video5',
       title: 'プログラミング初心者におすすめの言語は？2025年最新版',
       thumbnail: '/youtube-thumbnail-5.jpg',
-      views: '5,678回視聴',
+      views: '',
       date: '2025年5月3日',
       url: 'https://www.youtube.com/@コヤマSWC/featured',
     },
@@ -55,7 +55,7 @@ export default function Media() {
       id: 'video6',
       title: 'AIを活用した効率的な学習方法！ChatGPTで勉強する方法',
       thumbnail: '/youtube-thumbnail-6.jpg',
-      views: '6,789回視聴',
+      views: '',
       date: '2025年4月26日',
       url: 'https://www.youtube.com/@コヤマSWC/featured',
     },
@@ -104,7 +104,7 @@ export default function Media() {
       title: '【初心者向け】Windsurfのおすすめ設定まとめ',
       description: 'AIコーディングアシスタント「Windsurf」を最大限活用するための設定方法や使い方のコツを詳しく解説しています。',
       date: '2025年6月1日',
-      likes: 125,
+      likes: 0,
       readTime: '5分',
       tags: ['AI', 'プログラミング', 'Windsurf'],
       url: 'https://note.com/ri_ra_ta_na/n/n2345678901',
@@ -114,7 +114,7 @@ export default function Media() {
       title: 'Google Geminiはここが凄い！ChatGPTやClaudeにはない強みとは？',
       description: 'Google Geminiの特徴や強み、ChatGPTやClaudeとの違いを徹底比較しました。AIツール選びの参考にどうぞ。',
       date: '2025年5月15日',
-      likes: 243,
+      likes: 0,
       readTime: '8分',
       tags: ['AI', 'Google Gemini', 'ChatGPT'],
       url: 'https://note.com/ri_ra_ta_na/n/n1234567890',
@@ -124,7 +124,7 @@ export default function Media() {
       title: 'Next.js 14で作るモダンなウェブサイト入門',
       description: 'Next.js 14の新機能を使って、モダンでパフォーマンスの高いウェブサイトを作る方法を解説します。',
       date: '2025年5月1日',
-      likes: 187,
+      likes: 0,
       readTime: '10分',
       tags: ['Next.js', 'React', 'ウェブ開発'],
       url: 'https://note.com/ri_ra_ta_na',
@@ -134,7 +134,7 @@ export default function Media() {
       title: '2025年版・フリーランスエンジニアになるためのロードマップ',
       description: '未経験からフリーランスエンジニアを目指す人のための、具体的なステップとスキルアップ方法を紹介します。',
       date: '2025年4月15日',
-      likes: 356,
+      likes: 0,
       readTime: '12分',
       tags: ['フリーランス', 'キャリア', 'プログラミング'],
       url: 'https://note.com/ri_ra_ta_na',
@@ -147,54 +147,54 @@ export default function Media() {
       id: 'tweet1',
       content: 'Windsurfを使ってポートフォリオサイトを作成中。AIコーディングアシスタントの進化がすごい！ #Windsurf #AI #ポートフォリオ',
       date: '2025年6月3日',
-      likes: 45,
-      retweets: 12,
-      replies: 8,
+      likes: 0,
+      retweets: 0,
+      replies: 0,
       url: 'https://x.com/ri_ra_ta_na',
     },
     {
       id: 'tweet2',
       content: '最新のnote記事「【初心者向け】Windsurfのおすすめ設定まとめ」を公開しました！ AIコーディングの効率が格段に上がる設定方法を解説しています。 #Windsurf #AI #プログラミング',
       date: '2025年6月1日',
-      likes: 78,
-      retweets: 23,
-      replies: 15,
+      likes: 0,
+      retweets: 0,
+      replies: 0,
       url: 'https://x.com/ri_ra_ta_na',
     },
     {
       id: 'tweet3',
       content: 'stand.fmで新しいエピソード「イケハヤさんのVibe Codingサロンに入会した感想」を公開しました！ #VibeCoding #イケハヤ #プログラミング',
       date: '2025年6月2日',
-      likes: 56,
-      retweets: 14,
-      replies: 7,
+      likes: 0,
+      retweets: 0,
+      replies: 0,
       url: 'https://x.com/ri_ra_ta_na',
     },
     {
       id: 'tweet4',
       content: 'Next.js 14 + Tailwind CSS + TypeScriptの組み合わせが最高すぎる。モダンなウェブ開発がこんなに楽しいとは！ #Next.js #TailwindCSS #TypeScript',
       date: '2025年5月30日',
-      likes: 92,
-      retweets: 31,
-      replies: 12,
+      likes: 0,
+      retweets: 0,
+      replies: 0,
       url: 'https://x.com/ri_ra_ta_na',
     },
     {
       id: 'tweet5',
       content: 'ChatGPTとGoogle Geminiを比較した動画を公開しました！どちらが使いやすいか、用途別に詳しく解説しています。 #ChatGPT #Gemini #AI',
       date: '2025年5月25日',
-      likes: 67,
-      retweets: 19,
-      replies: 14,
+      likes: 0,
+      retweets: 0,
+      replies: 0,
       url: 'https://x.com/ri_ra_ta_na',
     },
     {
       id: 'tweet6',
       content: '今日もコーディング作業が捗る。AIの力を借りつつ、自分のスキルも磨いていく。この相乗効果が大事。 #プログラミング #AI #個人開発',
       date: '2025年5月28日',
-      likes: 43,
-      retweets: 8,
-      replies: 5,
+      likes: 0,
+      retweets: 0,
+      replies: 0,
       url: 'https://x.com/ri_ra_ta_na',
     },
   ];
@@ -284,7 +284,7 @@ export default function Media() {
                         <FaYoutube className="text-5xl text-red-600" />
                       </div>
                       <div className="absolute bottom-2 right-2 bg-black bg-opacity-80 px-2 py-1 text-xs">
-                        {video.views}
+                        {/* 視聴回数は表示しない */}
                       </div>
                     </div>
                     <div className="p-4">
@@ -396,7 +396,7 @@ export default function Media() {
                         <FaClock className="mr-1" /> {article.readTime}
                       </div>
                       <div className="flex items-center">
-                        <FaThumbsUp className="mr-1" /> {article.likes}
+                        <FaThumbsUp className="mr-1" />
                       </div>
                     </div>
                   </a>
@@ -439,13 +439,13 @@ export default function Media() {
                         <p className="text-gray-300 mb-4">{tweet.content}</p>
                         <div className="flex space-x-6 text-gray-500">
                           <div className="flex items-center">
-                            <FaComment className="mr-1" /> {tweet.replies}
+                            <FaComment className="mr-1" />
                           </div>
                           <div className="flex items-center">
-                            <FaRetweet className="mr-1" /> {tweet.retweets}
+                            <FaRetweet className="mr-1" />
                           </div>
                           <div className="flex items-center">
-                            <FaThumbsUp className="mr-1" /> {tweet.likes}
+                            <FaThumbsUp className="mr-1" />
                           </div>
                         </div>
                       </div>
