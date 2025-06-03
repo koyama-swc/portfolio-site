@@ -118,7 +118,15 @@ export default function Profile() {
             <div className="md:col-span-1">
               <div className="aspect-square relative overflow-hidden rounded-lg border-2 border-red-600 mb-6">
                 {/* プロフィール画像を配置 */}
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-black/50"></div>
+                <Image 
+                  src="/images/profile-image.png" 
+                  alt="コヤマのプロフィール画像" 
+                  width={400} 
+                  height={400} 
+                  className="object-cover w-full h-full"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-black/50 pointer-events-none"></div>
               </div>
               
               <div className="flex flex-wrap gap-4 mb-6">
