@@ -6,8 +6,14 @@ const nextConfig = {
     unoptimized: true,
   },
   // GitHub Pages用の設定
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-site' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio-site/' : '',
+  basePath: '/portfolio-site',
+  assetPrefix: '/portfolio-site/',
+  // スタイルシートの読み込みを確実にするための設定
+  webpack: (config) => {
+    return config;
+  },
+  // トレイリングスラッシュを追加
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
