@@ -53,11 +53,7 @@ const Footer = () => {
                   PROFILE
                 </Link>
               </li>
-              <li>
-                <Link href="/works" className="text-gray-400 hover:text-red-500 transition-colors duration-300">
-                  WORKS
-                </Link>
-              </li>
+
               <li>
                 <Link href="/media" className="text-gray-400 hover:text-red-500 transition-colors duration-300">
                   MEDIA

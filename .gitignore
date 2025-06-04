@@ -1,1 +1,17 @@
+# 依存関係
 node_modules
+
+# ビルド生成物
+.next/
+out/
+
+# ローカル環境設定
+.env*.local
+
+# キャッシュ
+.vercel
+.netlify
+
+# その他
+.DS_Store
+*.log
