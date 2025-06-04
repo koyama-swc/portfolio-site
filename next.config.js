@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true,
   },
   // GitHub Pages用の設定
-  basePath: '/portfolio-site',
-  assetPrefix: '/portfolio-site/',
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-site' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio-site/' : '',
 }
 
 module.exports = nextConfig
