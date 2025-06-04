@@ -98,3 +98,41 @@ portfolio-site/
 
 - GitHub Pagesでの表示に問題がある場合は、ブラウザのキャッシュをクリアするか、シークレットモードで確認してください。
 - 画像などの静的ファイルは`public`ディレクトリに配置してください。
+
+## GitHub Pagesへのデプロイ
+
+このプロジェクトはGitHub Pagesにデプロイされます。`master`ブランチにプッシュすると、GitHub Actionsによって自動的にビルドされ、`gh-pages`ブランチにデプロイされます。
+
+### デプロイスクリプト
+
+`package.json`の`deploy`スクリプトは以下のようになっています。
+
+```json
+"deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
+```
+
+### GitHub Actionsワークフロー
+
+`.github/workflows/deploy.yml`にデプロイ用のワークフローが定義されています。
+
+## プロジェクト構造
+
+- `public/`: 静的ファイル（画像など）
+- `src/`: ソースコード
+  - `app/`: Next.jsのApp Router関連ファイル（ページ、レイアウトなど）
+  - `components/`: 再利用可能なReactコンポーネント
+  - `styles/`: グローバルCSSファイル
+- `next.config.js`: Next.jsの設定ファイル
+- `tailwind.config.ts`: Tailwind CSSの設定ファイル
+- `postcss.config.js`: PostCSSの設定ファイル
+
+## 注意点
+
+- GitHub Pagesで正しく表示されるように、`next.config.js`の`basePath`と`assetPrefix`が設定されています。
+- `.nojekyll`ファイルがルートディレクトリと`public`ディレクトリに配置されており、GitHub PagesでのJekyll処理を無効にしています。
+
+問題がある場合は、ブラウザのキャッシュをクリアするか、シークレットモードで確認してください。
+- 画像などの静的ファイルは`public`ディレクトリに配置してください。
+
+ 
+
