@@ -23,6 +23,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      # === 追加するステップ ===
+      - name: Create .nojekyll file
+        run: touch ./out/.nojekyll
+      # ======================
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
