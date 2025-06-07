@@ -187,11 +187,11 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square relative overflow-hidden rounded-lg border-2 border-red-600">
                 {/* プロフィール画像を配置 */}
-                <Image 
-                  src="/images/profile-image.png" 
-                  alt="コヤマのプロフィール画像" 
-                  width={400} 
-                  height={400} 
+                <Image
+                  src="/portfolio-site/images/profile-image.png"
+                  alt="コヤマのプロフィール画像"
+                  width={400}
+                  height={400}
                   className="object-cover w-full h-full"
                   priority
                 />
