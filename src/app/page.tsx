@@ -102,10 +102,7 @@ export default async function Home() {
             </p>
 
               <Link href="/profile" className="btn-primary">
-
-              </Link>
-
-
+                プロフィールを見る
               </Link>
             </div>
           </div>
