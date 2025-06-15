@@ -21,7 +21,7 @@ export default async function Home() {
     {
       id: 'news2',
       date: '2025年6月2日',
-      title: 'イケハヤさんのVibe Codingサロンに入会しました！stand.fmで感想を話しています',
+      title: `イケハヤさんのVibe Codingサロンに入会しました！stand.fmで感想を話しています`,
       url: 'https://stand.fm/episodes/683cd04d13f734b7d30b656d',
       category: 'stand.fm'
     },
