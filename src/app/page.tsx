@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import { getMediaFeeds } from '@/lib/fetchFeeds';
 import Image from 'next/image';
