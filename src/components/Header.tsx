@@ -75,16 +75,6 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/profile" className="nav-link">
-                  PROFILE
-                </Link>
-              </li>
-              <li>
-                <Link href="/media" className="nav-link">
-                  MEDIA
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="nav-link">
                   CONTACT
                 </Link>
@@ -124,24 +114,6 @@ const Header = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   HOME
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/profile"
-                  className="nav-link block py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  PROFILE
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/media"
-                  className="nav-link block py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  MEDIA
                 </Link>
               </li>
               <li>

@@ -1,11 +1,14 @@
 import React from 'react';
+import { getMediaFeeds } from '@/lib/fetchFeeds';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaYoutube, FaHeadphones, FaPen, FaTwitter, FaArrowRight } from 'react-icons/fa';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LatestMediaSSG from '@/components/LatestMediaSSG';
 
-export default function Home() {
+export default async function Home() {
+  const feeds = await getMediaFeeds();
   // 最新のニュース
   const news = [
     {
@@ -97,12 +100,12 @@ export default function Home() {
               【社会人✕投資✕最新テクノロジー】<br />
               AI・NFTなどの最先端テクノロジーから、投資や暗号資産の実践まで
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
               <Link href="/profile" className="btn-primary">
-                PROFILE
+
               </Link>
-              <Link href="/media" className="btn-primary">
-                MEDIA
+
+
               </Link>
             </div>
           </div>
@@ -142,6 +145,7 @@ export default function Home() {
       </section>
       
       {/* メディアセクション */}
+      <LatestMediaSSG feeds={feeds} />
       <section className="py-20 bg-black">
         <div className="container-custom">
           <h2 className="section-title">MEDIA</h2>
@@ -181,7 +185,7 @@ export default function Home() {
                 ネットでは見つからないリアルな体験談や、初心者でも迷わず実践できる情報を発信しています！
               </p>
               <Link href="/profile" className="btn-primary">
-                詳しいプロフィールを見る
+                お問い合わせはこちら
               </Link>
             </div>
             <div className="relative">

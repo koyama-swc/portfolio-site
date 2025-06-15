@@ -83,7 +83,9 @@ export default function Profile() {
             <div className="md:col-span-2">
               <h2 className="text-3xl font-bold mb-4">コヤマ</h2>
               <p className="text-gray-300 mb-8">
-                【社会人✕投資✕最新テクノロジー】
+                【社会人✕投資✕最新テクノロジー】<br /><br />
+                AI・NFTなどの最先端テクノロジーから、投資や暗号資産の実践まで。<br />
+                ネットでは見つからないリアルな体験談や、初心者でも迷わず実践できる情報を発信しています！
               </p>
             </div>
           </div>
